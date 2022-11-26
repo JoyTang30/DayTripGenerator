@@ -2,7 +2,6 @@ print (" ")
 print ( "Welcome to the Day Trip Generator! Where our services take all the stress away from planning an unforgettable vacation! ")
 print ( " ")
 
-# destinations, restaurants, mode of transportation, and entertainment selections in their own separate lists. 
 
 import random
 
