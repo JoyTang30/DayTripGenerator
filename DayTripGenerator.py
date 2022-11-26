@@ -6,30 +6,53 @@ print ( " ")
 
 import random
 
-destination_list= ['New York' , 'Seattle' , 'California']
-ran_des= random.choice(destination_list)
+user_response= "no"
 
-# print(random.choice(destination_list))
-print("We have chosen", random.choice(destination_list),"for your destination!","Does this sound good?")
+while user_response != "yes":
+    def ran_des ():
+        destination_list= ['New York' , 'Seattle' , 'California']
+        return random.choice(destination_list)
+    ran_de= ran_des()
 
-
-
-restaurants_list= ["Lombardi's", 'The Pink Door', "Mastro's"]
-ran_res= random.choice(restaurants_list)
-print ("We have chosen", random.choice(restaurants_list),"for your restaurant!","Does this sound good?")
+    user_response= input(f'We have chosen {ran_de} for your destination! Does this sound good? yes or no?')
 
 
+    
+user_response2= "no"
+    
+while user_response2 != "yes":
+    def ran_res():
+        restaurants_list= ["Lombardi's", 'The Pink Door', "Mastro's"]
+        return random.choice(restaurants_list)
+    ran_re= ran_res()
+    user_response2= input(f'We have chosen  {ran_re} for your restaurant! Does this sound good? yes or no?')
+
+
+user_response3= "no"
+    
+while user_response3 != "yes":
+    def ran_trans():
+        transportation_list= ['rental car', 'Uber', 'train']
+        return random.choice(transportation_list)
+    ran_tran = ran_trans()
+    user_response3= input(f'We have chosen {ran_tran} for your transportation! Does this sound good? yes or no?')
 
 
 
-transportation_list= ['rental car', 'Uber', 'train']
-ran_trans= random.choice(transportation_list)
-print ("We have chosen", random.choice(transportation_list),"for your transportation!","Does this sound good?")
+user_response4= "no"
+
+while user_response4 != "yes":
+    def ran_enter():
+        entertainment_list= ['Rockefeller Center', 'Space Needle', 'Universal Studios']
+        return random.choice(entertainment_list)
+    ran_ente= ran_enter()
+    user_response4= input(f'We have chosen {ran_ente} for your entertainment! Does this sound good? yes or no?') 
 
 
 
 
-
-entertainment_list= ['Rockefeller Center', 'Space Needle', 'Universal Studios']
-ran_enter= random.choice(entertainment_list)
-print("We have chosen", random.choice(entertainment_list),"for your entertainment!","Does this sound good?") 
+overall_satisfaction= input(f' We have chosen for you {ran_de} as your destination, {ran_re} as your restaurant, {ran_tran} as your transportation, and {ran_ente} as your entertainment. Are you happy with this trip? yes or no?')
+if overall_satisfaction == "yes":
+    print("Great! Your trip is complete")
+else: 
+    print( "Try again!")
